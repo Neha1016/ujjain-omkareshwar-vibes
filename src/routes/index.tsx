@@ -1,26 +1,50 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Toaster } from "sonner";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import {
+  AboutUjjain,
+  Temples,
+  BestPlaces,
+  Food,
+  Hotels,
+  OmkareshwarHero,
+  OmkareshwarPlaces,
+  OmkareshwarFoodStay,
+  Packages,
+  Gallery,
+  Testimonials,
+  Contact,
+} from "@/components/site/Sections";
+import { Footer } from "@/components/site/Footer";
+import { Loader } from "@/components/site/Loader";
 
 export const Route = createFileRoute("/")({
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <Loader />
+      <Navbar />
+      <main>
+        <Hero />
+        <AboutUjjain />
+        <Temples />
+        <BestPlaces />
+        <Food />
+        <Hotels />
+        <OmkareshwarHero />
+        <OmkareshwarPlaces />
+        <OmkareshwarFoodStay />
+        <Packages />
+        <Gallery />
+        <Testimonials />
+        <Contact />
+      </main>
+      <Footer />
+      <Toaster theme="dark" position="top-center" richColors />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
