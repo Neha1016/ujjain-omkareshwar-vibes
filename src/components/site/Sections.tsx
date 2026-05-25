@@ -1,4 +1,7 @@
 import { motion } from "motion/react";
+import { useState } from "react";
+import { z } from "zod";
+import { toast } from "sonner";
 import {
   MapPin,
   Star,
@@ -613,10 +616,6 @@ export function Testimonials() {
 }
 
 /* ---------- CONTACT / BOOKING ---------- */
-import { useState } from "react";
-import { z } from "zod";
-import { toast } from "sonner";
-
 const schema = z.object({
   name: z.string().trim().min(2, "Enter your name").max(100),
   phone: z.string().trim().min(7, "Enter a valid phone").max(20),
