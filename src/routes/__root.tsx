@@ -75,11 +75,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Divine Journey — Ujjain & Omkareshwar Tourism" },
       { name: "description", content: "Explore the spiritual capitals of India. Mahakaleshwar Jyotirlinga, Omkareshwar, temples, ghats, food and curated tour packages." },
       { name: "author", content: "Divine Journey" },
-      { property: "og:title", content: "Divine Journey — Ujjain & Omkareshwar" },
-      { property: "og:description", content: "Experience the divine journey of Ujjain & Omkareshwar — temples, aarti, ghats, food and unforgettable spiritual travel." },
+      { property: "og:title", content: "Divine Journey — Ujjain & Omkareshwar Tourism" },
+      { property: "og:description", content: "Explore the spiritual capitals of India. Mahakaleshwar Jyotirlinga, Omkareshwar, temples, ghats, food and curated tour packages." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Divine Journey — Ujjain & Omkareshwar Tourism" },
+      { name: "twitter:description", content: "Explore the spiritual capitals of India. Mahakaleshwar Jyotirlinga, Omkareshwar, temples, ghats, food and curated tour packages." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/2261c591-5a1c-4e95-9856-5c9c85b5f096" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/2261c591-5a1c-4e95-9856-5c9c85b5f096" },
     ],
     links: [
       {
