@@ -9,12 +9,12 @@ export function Footer() {
           <div className="flex items-center gap-2 mb-4">
             <Flame className="w-7 h-7 text-saffron animate-flicker" />
             <span className="font-display text-xl tracking-widest text-gradient-divine">
-              DIVINE JOURNEY
+              NEERAJ MARU
             </span>
           </div>
           <p className="text-sm text-foreground/70 font-serif-elegant leading-relaxed">
             Curating premium pilgrimages across the sacred geographies of
-            Ujjain &amp; Omkareshwar since 2008.
+            Ujjain &amp; Omkareshwar with heartfelt devotion.
           </p>
           <div className="flex gap-3 mt-5">
             {[Facebook, Instagram, Twitter, Youtube].map((Icon, i) => (
@@ -38,8 +38,8 @@ export function Footer() {
           <h4 className="font-display text-gold tracking-widest text-sm uppercase mb-5">Contact</h4>
           <ul className="space-y-3 text-sm text-foreground/75">
             <li className="flex gap-2 items-start"><MapPin className="w-4 h-4 text-gold mt-0.5" /> Mahakal Rd, Ujjain, MP — 456006</li>
-            <li className="flex gap-2 items-start"><Phone className="w-4 h-4 text-gold mt-0.5" /> +91 98765 43210</li>
-            <li className="flex gap-2 items-start"><Mail className="w-4 h-4 text-gold mt-0.5" /> hello@divinejourney.in</li>
+            <li className="flex gap-2 items-start"><Phone className="w-4 h-4 text-gold mt-0.5" /> +91 62653 82279</li>
+            <li className="flex gap-2 items-start"><Mail className="w-4 h-4 text-gold mt-0.5" /> neerajmaru454@gmail.com</li>
           </ul>
         </div>
 
@@ -57,7 +57,7 @@ export function Footer() {
       </div>
 
       <div className="mx-auto max-w-7xl mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-foreground/60">
-        <div>© {new Date().getFullYear()} Divine Journey. All rights reserved.</div>
+        <div>© {new Date().getFullYear()} Neeraj Maru. All rights reserved.</div>
         <div className="font-serif-elegant italic text-gold/80">"Har Har Mahadev · Om Namah Shivaya"</div>
       </div>
     </footer>
