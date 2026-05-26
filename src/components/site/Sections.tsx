@@ -61,7 +61,7 @@ export function AboutUjjain() {
     { icon: Star, title: "Culture & Festivals", text: "Vibrant traditions, local markets, sweets and folk artistry." },
   ];
   return (
-    <section id="about" className="relative py-28 px-6 overflow-hidden">
+    <section id="about" className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-night" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-saffron/10 blur-[120px] rounded-full" />
       <div className="relative mx-auto max-w-7xl grid lg:grid-cols-2 gap-14 items-center">
@@ -134,7 +134,7 @@ const temples = [
 
 export function Temples() {
   return (
-    <section id="temples" className="relative py-28 px-6">
+    <section id="temples" className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6">
       <SectionTitle
         eyebrow="Famous Temples"
         title="Ten Sacred Shrines of Ujjain"
@@ -182,7 +182,7 @@ const places = [
 
 export function BestPlaces() {
   return (
-    <section id="places" className="relative py-28 px-6 bg-gradient-night">
+    <section id="places" className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6 bg-gradient-night">
       <SectionTitle
         eyebrow="Best Places"
         title="Where Devotion Meets Wonder"
@@ -218,7 +218,7 @@ const foods = [
 
 export function Food() {
   return (
-    <section id="food" className="relative py-28 px-6">
+    <section id="food" className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6">
       <SectionTitle
         eyebrow="Flavors of Ujjain"
         title="A Feast for the Soul"
@@ -262,7 +262,7 @@ const hotels = [
 
 export function Hotels() {
   return (
-    <section id="hotels" className="relative py-28 px-6 bg-gradient-night">
+    <section id="hotels" className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6 bg-gradient-night">
       <SectionTitle
         eyebrow="Stay"
         title="Best Hotels in Ujjain"
@@ -301,7 +301,7 @@ export function Hotels() {
 /* ---------- OMKARESHWAR ---------- */
 export function OmkareshwarHero() {
   return (
-    <section id="omkareshwar" className="relative py-32 px-6 overflow-hidden">
+    <section id="omkareshwar" className="relative py-20 sm:py-28 lg:py-32 px-4 sm:px-6 overflow-hidden">
       <div className="absolute inset-0">
         <img src={oIsland} alt="Om-shaped island Omkareshwar" loading="lazy" width={1280} height={896} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/30" />
@@ -365,7 +365,7 @@ const omkPlaces = [
 
 export function OmkareshwarPlaces() {
   return (
-    <section className="relative py-28 px-6 bg-gradient-night">
+    <section className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6 bg-gradient-night">
       <SectionTitle
         eyebrow="Famous Places"
         title="Discover Omkareshwar"
@@ -401,7 +401,7 @@ const omkStays = [
 
 export function OmkareshwarFoodStay() {
   return (
-    <section className="relative py-28 px-6">
+    <section className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6">
       <SectionTitle
         eyebrow="Food & Stay"
         title="Riverside Hospitality"
@@ -463,7 +463,7 @@ const packages = [
 
 export function Packages() {
   return (
-    <section id="packages" className="relative py-28 px-6 bg-gradient-night">
+    <section id="packages" className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6 bg-gradient-night">
       <SectionTitle
         eyebrow="Tour Packages"
         title="Curated Spiritual Journeys"
@@ -531,7 +531,7 @@ const galleryImgs = [
 
 export function Gallery() {
   return (
-    <section id="gallery" className="relative py-28 px-6">
+    <section id="gallery" className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6">
       <SectionTitle
         eyebrow="Gallery"
         title="Moments of the Divine"
@@ -582,7 +582,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="relative py-28 px-6 bg-gradient-night">
+    <section className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6 bg-gradient-night">
       <SectionTitle
         eyebrow="Testimonials"
         title="Voices of the Faithful"
@@ -648,7 +648,7 @@ export function Contact() {
     setForm((f) => ({ ...f, [k]: e.target.value }));
 
   return (
-    <section id="contact" className="relative py-28 px-6 overflow-hidden">
+    <section id="contact" className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-night" />
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gold/10 blur-[140px] rounded-full" />
       <div className="relative mx-auto max-w-6xl grid lg:grid-cols-2 gap-12 items-start">
