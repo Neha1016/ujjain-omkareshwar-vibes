@@ -16,7 +16,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative h-screen min-h-[700px] w-full overflow-hidden"
+      className="relative h-screen min-h-[600px] sm:min-h-[700px] w-full overflow-hidden"
     >
       {slides.map((src, idx) => (
         <div
@@ -39,7 +39,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/40 to-background" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,oklch(0.1_0.015_50/0.7)_100%)]" />
 
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -55,11 +55,11 @@ export function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.1, delay: 0.4, ease: [0.2, 0.7, 0.2, 1] }}
-          className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] max-w-5xl"
+          className="font-display text-[2.25rem] xs:text-4xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.02] sm:leading-[0.95] max-w-5xl break-words"
         >
           <span className="block text-foreground">Experience the</span>
           <span className="block text-gradient-divine mt-2">Divine Journey</span>
-          <span className="block font-serif-elegant italic text-3xl sm:text-4xl md:text-5xl mt-4 text-gold-soft">
+          <span className="block font-serif-elegant italic text-xl sm:text-3xl md:text-4xl lg:text-5xl mt-3 sm:mt-4 text-gold-soft">
             of Ujjain &amp; Omkareshwar
           </span>
         </motion.h1>
@@ -68,7 +68,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.9 }}
-          className="mt-8 max-w-2xl text-base md:text-lg text-foreground/80 font-light"
+          className="mt-6 sm:mt-8 max-w-2xl text-sm sm:text-base md:text-lg text-foreground/80 font-light px-2"
         >
           Explore ancient temples, sacred ghats, spirituality, culture, food and
           unforgettable journeys along the Kshipra and Narmada rivers.
@@ -78,17 +78,17 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.1 }}
-          className="mt-10 flex flex-col sm:flex-row gap-4"
+          className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto items-stretch sm:items-center px-4 sm:px-0"
         >
           <a
             href="#packages"
-            className="px-8 py-4 rounded-full bg-gradient-saffron text-primary-foreground font-semibold tracking-wide shadow-divine hover:shadow-gold-glow hover:-translate-y-0.5 transition-all"
+            className="text-center px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-gradient-saffron text-primary-foreground font-semibold tracking-wide shadow-divine hover:shadow-gold-glow hover:-translate-y-0.5 transition-all"
           >
             Book Tour
           </a>
           <a
             href="#temples"
-            className="px-8 py-4 rounded-full glass text-gold border border-gold/40 hover:bg-gold/10 transition-all font-semibold tracking-wide"
+            className="text-center px-6 sm:px-8 py-3.5 sm:py-4 rounded-full glass text-gold border border-gold/40 hover:bg-gold/10 transition-all font-semibold tracking-wide"
           >
             Explore Temples
           </a>
