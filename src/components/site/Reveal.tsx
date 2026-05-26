@@ -43,20 +43,20 @@ export function SectionTitle({
   subtitle?: string;
 }) {
   return (
-    <div className="text-center mb-14 max-w-3xl mx-auto">
+    <div className="text-center mb-10 sm:mb-14 max-w-3xl mx-auto px-2">
       <Reveal>
-        <div className="ornament text-gold text-xs tracking-[0.4em] uppercase font-semibold">
+        <div className="ornament text-gold text-[10px] sm:text-xs tracking-[0.3em] sm:tracking-[0.4em] uppercase font-semibold">
           {eyebrow}
         </div>
       </Reveal>
       <Reveal delay={1}>
-        <h2 className="mt-5 text-4xl md:text-5xl lg:text-6xl font-display text-gradient-divine leading-[1.05]">
+        <h2 className="mt-4 sm:mt-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display text-gradient-divine leading-[1.1] sm:leading-[1.05] break-words">
           {title}
         </h2>
       </Reveal>
       {subtitle && (
         <Reveal delay={2}>
-          <p className="mt-5 text-lg text-muted-foreground font-serif-elegant italic">
+          <p className="mt-4 sm:mt-5 text-base sm:text-lg text-muted-foreground font-serif-elegant italic">
             {subtitle}
           </p>
         </Reveal>
