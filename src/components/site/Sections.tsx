@@ -61,7 +61,7 @@ export function AboutUjjain() {
     { icon: Star, title: "Culture & Festivals", text: "Vibrant traditions, local markets, sweets and folk artistry." },
   ];
   return (
-    <section id="about" className="relative py-28 px-6 overflow-hidden">
+    <section id="about" className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-night" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-saffron/10 blur-[120px] rounded-full" />
       <div className="relative mx-auto max-w-7xl grid lg:grid-cols-2 gap-14 items-center">
@@ -134,20 +134,20 @@ const temples = [
 
 export function Temples() {
   return (
-    <section id="temples" className="relative py-28 px-6">
+    <section id="temples" className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6">
       <SectionTitle
         eyebrow="Famous Temples"
         title="Ten Sacred Shrines of Ujjain"
         subtitle="Each stone breathes a thousand prayers."
       />
-      <div className="mx-auto max-w-7xl grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
         {temples.map((t, i) => (
           <Reveal key={t.name} delay={i % 4}>
             <motion.div
               whileHover={{ y: -8 }}
-              className="group glass rounded-3xl overflow-hidden hover-zoom shadow-card-luxe h-full"
+              className="group glass rounded-3xl overflow-hidden hover-zoom shadow-card-luxe h-full relative"
             >
-              <div className="aspect-[4/5] overflow-hidden">
+              <div className="aspect-[4/5] overflow-hidden w-full">
                 <img
                   src={t.img}
                   alt={t.name}
@@ -157,9 +157,9 @@ export function Temples() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background via-background/80 to-transparent p-5 pt-20">
-                <h3 className="font-display text-lg text-gold">{t.name}</h3>
-                <p className="text-sm text-foreground/70 mt-1">{t.desc}</p>
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background via-background/85 to-transparent p-4 sm:p-5 pt-16 sm:pt-20">
+                <h3 className="font-display text-base sm:text-lg text-gold leading-tight break-words">{t.name}</h3>
+                <p className="text-xs sm:text-sm text-foreground/75 mt-1 line-clamp-2">{t.desc}</p>
               </div>
             </motion.div>
           </Reveal>
@@ -182,7 +182,7 @@ const places = [
 
 export function BestPlaces() {
   return (
-    <section id="places" className="relative py-28 px-6 bg-gradient-night">
+    <section id="places" className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6 bg-gradient-night">
       <SectionTitle
         eyebrow="Best Places"
         title="Where Devotion Meets Wonder"
@@ -218,7 +218,7 @@ const foods = [
 
 export function Food() {
   return (
-    <section id="food" className="relative py-28 px-6">
+    <section id="food" className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6">
       <SectionTitle
         eyebrow="Flavors of Ujjain"
         title="A Feast for the Soul"
@@ -239,11 +239,11 @@ export function Food() {
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-5">
-                <span className="inline-block text-[10px] tracking-[0.3em] uppercase text-gold border border-gold/40 px-2 py-1 rounded-full mb-2">
+              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5">
+                <span className="inline-block text-[9px] sm:text-[10px] tracking-[0.25em] sm:tracking-[0.3em] uppercase text-gold border border-gold/40 px-2 py-1 rounded-full mb-2">
                   {f.tag}
                 </span>
-                <h3 className="font-display text-xl text-foreground">{f.name}</h3>
+                <h3 className="font-display text-base sm:text-xl text-foreground leading-tight break-words">{f.name}</h3>
               </div>
             </motion.div>
           </Reveal>
@@ -262,7 +262,7 @@ const hotels = [
 
 export function Hotels() {
   return (
-    <section id="hotels" className="relative py-28 px-6 bg-gradient-night">
+    <section id="hotels" className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6 bg-gradient-night">
       <SectionTitle
         eyebrow="Stay"
         title="Best Hotels in Ujjain"
@@ -301,7 +301,7 @@ export function Hotels() {
 /* ---------- OMKARESHWAR ---------- */
 export function OmkareshwarHero() {
   return (
-    <section id="omkareshwar" className="relative py-32 px-6 overflow-hidden">
+    <section id="omkareshwar" className="relative py-20 sm:py-28 lg:py-32 px-4 sm:px-6 overflow-hidden">
       <div className="absolute inset-0">
         <img src={oIsland} alt="Om-shaped island Omkareshwar" loading="lazy" width={1280} height={896} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/30" />
@@ -365,7 +365,7 @@ const omkPlaces = [
 
 export function OmkareshwarPlaces() {
   return (
-    <section className="relative py-28 px-6 bg-gradient-night">
+    <section className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6 bg-gradient-night">
       <SectionTitle
         eyebrow="Famous Places"
         title="Discover Omkareshwar"
@@ -376,9 +376,9 @@ export function OmkareshwarPlaces() {
             <motion.div whileHover={{ y: -6 }} className="relative rounded-3xl overflow-hidden shadow-card-luxe hover-zoom group">
               <img src={p.img} alt={p.name} loading="lazy" width={800} height={1000} className="aspect-[4/5] w-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="font-display text-2xl text-gold">{p.name}</h3>
-                <p className="text-sm text-foreground/75 mt-1">{p.desc}</p>
+              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                <h3 className="font-display text-lg sm:text-2xl text-gold leading-tight break-words">{p.name}</h3>
+                <p className="text-xs sm:text-sm text-foreground/75 mt-1 line-clamp-2">{p.desc}</p>
                 <div className="mt-3 flex items-center gap-1 text-xs text-foreground/60">
                   <MapPin className="w-3 h-3" /> Omkareshwar, MP
                 </div>
@@ -401,7 +401,7 @@ const omkStays = [
 
 export function OmkareshwarFoodStay() {
   return (
-    <section className="relative py-28 px-6">
+    <section className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6">
       <SectionTitle
         eyebrow="Food & Stay"
         title="Riverside Hospitality"
@@ -463,7 +463,7 @@ const packages = [
 
 export function Packages() {
   return (
-    <section id="packages" className="relative py-28 px-6 bg-gradient-night">
+    <section id="packages" className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6 bg-gradient-night">
       <SectionTitle
         eyebrow="Tour Packages"
         title="Curated Spiritual Journeys"
@@ -531,7 +531,7 @@ const galleryImgs = [
 
 export function Gallery() {
   return (
-    <section id="gallery" className="relative py-28 px-6">
+    <section id="gallery" className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6">
       <SectionTitle
         eyebrow="Gallery"
         title="Moments of the Divine"
@@ -582,7 +582,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="relative py-28 px-6 bg-gradient-night">
+    <section className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6 bg-gradient-night">
       <SectionTitle
         eyebrow="Testimonials"
         title="Voices of the Faithful"
@@ -648,7 +648,7 @@ export function Contact() {
     setForm((f) => ({ ...f, [k]: e.target.value }));
 
   return (
-    <section id="contact" className="relative py-28 px-6 overflow-hidden">
+    <section id="contact" className="relative py-16 sm:py-24 lg:py-28 px-4 sm:px-6 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-night" />
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gold/10 blur-[140px] rounded-full" />
       <div className="relative mx-auto max-w-6xl grid lg:grid-cols-2 gap-12 items-start">

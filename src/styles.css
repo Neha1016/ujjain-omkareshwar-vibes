@@ -195,11 +195,14 @@
   .ornament::after {
     content: "";
     display: inline-block;
-    width: 60px;
+    width: 32px;
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--gold), transparent);
     vertical-align: middle;
-    margin: 0 14px;
+    margin: 0 8px;
+  }
+  @media (min-width: 640px) {
+    .ornament::before, .ornament::after { width: 60px; margin: 0 14px; }
   }
 
   @keyframes flicker {
