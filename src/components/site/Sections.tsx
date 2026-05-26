@@ -140,14 +140,14 @@ export function Temples() {
         title="Ten Sacred Shrines of Ujjain"
         subtitle="Each stone breathes a thousand prayers."
       />
-      <div className="mx-auto max-w-7xl grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
         {temples.map((t, i) => (
           <Reveal key={t.name} delay={i % 4}>
             <motion.div
               whileHover={{ y: -8 }}
-              className="group glass rounded-3xl overflow-hidden hover-zoom shadow-card-luxe h-full"
+              className="group glass rounded-3xl overflow-hidden hover-zoom shadow-card-luxe h-full relative"
             >
-              <div className="aspect-[4/5] overflow-hidden">
+              <div className="aspect-[4/5] overflow-hidden w-full">
                 <img
                   src={t.img}
                   alt={t.name}
@@ -157,9 +157,9 @@ export function Temples() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background via-background/80 to-transparent p-5 pt-20">
-                <h3 className="font-display text-lg text-gold">{t.name}</h3>
-                <p className="text-sm text-foreground/70 mt-1">{t.desc}</p>
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background via-background/85 to-transparent p-4 sm:p-5 pt-16 sm:pt-20">
+                <h3 className="font-display text-base sm:text-lg text-gold leading-tight break-words">{t.name}</h3>
+                <p className="text-xs sm:text-sm text-foreground/75 mt-1 line-clamp-2">{t.desc}</p>
               </div>
             </motion.div>
           </Reveal>
