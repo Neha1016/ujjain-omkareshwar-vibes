@@ -239,11 +239,11 @@ export function Food() {
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-5">
-                <span className="inline-block text-[10px] tracking-[0.3em] uppercase text-gold border border-gold/40 px-2 py-1 rounded-full mb-2">
+              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5">
+                <span className="inline-block text-[9px] sm:text-[10px] tracking-[0.25em] sm:tracking-[0.3em] uppercase text-gold border border-gold/40 px-2 py-1 rounded-full mb-2">
                   {f.tag}
                 </span>
-                <h3 className="font-display text-xl text-foreground">{f.name}</h3>
+                <h3 className="font-display text-base sm:text-xl text-foreground leading-tight break-words">{f.name}</h3>
               </div>
             </motion.div>
           </Reveal>
@@ -376,9 +376,9 @@ export function OmkareshwarPlaces() {
             <motion.div whileHover={{ y: -6 }} className="relative rounded-3xl overflow-hidden shadow-card-luxe hover-zoom group">
               <img src={p.img} alt={p.name} loading="lazy" width={800} height={1000} className="aspect-[4/5] w-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="font-display text-2xl text-gold">{p.name}</h3>
-                <p className="text-sm text-foreground/75 mt-1">{p.desc}</p>
+              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                <h3 className="font-display text-lg sm:text-2xl text-gold leading-tight break-words">{p.name}</h3>
+                <p className="text-xs sm:text-sm text-foreground/75 mt-1 line-clamp-2">{p.desc}</p>
                 <div className="mt-3 flex items-center gap-1 text-xs text-foreground/60">
                   <MapPin className="w-3 h-3" /> Omkareshwar, MP
                 </div>
