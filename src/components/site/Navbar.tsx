@@ -34,13 +34,13 @@ export function Navbar() {
         scrolled ? "glass-strong py-3 shadow-card-luxe" : "bg-transparent py-5"
       }`}
     >
-      <div className="mx-auto max-w-7xl px-5 flex items-center justify-between">
+      <div className="mx-auto max-w-7xl px-4 sm:px-5 flex items-center justify-between gap-3">
         <a href="#hero" className="flex items-center gap-2 group">
           <div className="relative">
             <Flame className="w-7 h-7 text-saffron animate-flicker" />
             <div className="absolute inset-0 bg-saffron blur-xl opacity-40 group-hover:opacity-70 transition-opacity" />
           </div>
-          <span className="font-display text-lg tracking-widest text-gradient-divine">
+          <span className="font-display text-sm sm:text-lg tracking-[0.2em] sm:tracking-widest text-gradient-divine whitespace-nowrap">
             DIVINE JOURNEY
           </span>
         </a>
